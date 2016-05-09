@@ -1,5 +1,7 @@
 # Umbraco-OmitSegmentsUrlProvider
-Omits URL segments from a node's URL, based on rules specified in web.config. Works with document types, e.g. omits the URL segment for doctype A if found in the path which has doctype B as parent.
+Makes Umbraco omit URL segments from a node's URL, based on rules specified in web.config. The URLs generated are native Umbraco URLs, i.e. no rewriting, urlAlias or redirects.
+
+Works with document types, e.g. omits the URL segment for doctype A if found in the path which has doctype B as parent.
 
 Simply put, sometimes you want to omit parts of URLs created by Umbraco (which are based on a node's path). Not rewrite them, not create an URL alias or a 301/302 redirect, just omit them for good. Like, for example, you'd like /company/pageelements/portfolio/portfolioitems/anawesomeproject to become /company/portolio/anawesomeproject.
 
