@@ -6,7 +6,11 @@ You can make Umbraco omit URL parts from the default url it constructs from a pa
 ```xml
 <add key="omiturlsegments:DocTypeToLookFor" value ="DocTypeToOmitFromUrl,AnotherDocTypeToOmitFromUrl"/>
 ```
-Where DocTypeToLookFor is the document type alias that will trigger the plugin to alter the node's URL and DocTypeToOmitFromUrl (as well as any additional doctypes, comma-separated) is(are) the doctype(s) that will be omitted from the URL path.
+Where:
+
+DocTypeToLookFor is the document type alias that will trigger the plugin to alter the node's URL and 
+
+DocTypeToOmitFromUrl (as well as any additional doctypes, comma-separated) is(are) the doctype(s) that will be omitted from the URL path.
 
 ## Example
 Let's suppose that you have a document of type "CarPage" which is used to display car data. You add a child of type "Parts" which is used to group various car parts detailed descriptions, and under it you add multiple documents of type "PartPage".
