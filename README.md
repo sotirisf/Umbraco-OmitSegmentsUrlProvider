@@ -43,3 +43,6 @@ In order to achieve that, you will simply have to create an entry in the appSett
 <add key="omiturlsegments:CarPage" value ="Parts"/>
 ```
 which will tell the plugin to produce Urls for CarPage doctypes that will IGNORE any segment that comes from "Parts" doctypes under it.
+
+## Beware!
+Make sure that the URLs generated after applying your rules are still unique! Use this plugin only to omit "grouping" nodes or nodes that will not alter the uniqueness of the URL. 
