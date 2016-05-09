@@ -10,7 +10,13 @@ Where DocTypeToLookFor is the document type alias that will trigger the plugin t
 
 ## Example
 Let's suppose that you have a document of type "CarPage" which is used to display car data. You add a child of type "Parts" which is used to group various car parts detailed descriptions, and under it you add multiple documents of type "PartPage".
-So, for example, you may have a structure like Peugeot 208/Parts/Engine, where "Peugeot 208" is the CarPage doctype, "Parts" is the Parts doctype and "Engine" belongs to the "PartPage" doctype. But you don't want the url to say "Parts" or whatever the name of this interim node is. It's just a grouping node and you need this URL segment to go away, so that your Url can be something like "/Peugeot-208/Engine" instead of "/Peugeot-208/Parts/Engine".
+
+So, for example, you may have a structure like Peugeot 208/Parts/Engine, where "Peugeot 208" is the CarPage doctype, "Parts" is the Parts doctype and "Engine" belongs to the "PartPage" doctype. 
+
+But you don't want the url to say "Parts" or whatever the name of this interim node is. It's just a grouping node and you need this URL segment to go away, so that your Url can be something like:
+"/Peugeot-208/Engine" 
+instead of:
+"/Peugeot-208/Parts/Engine".
 
 In order to achieve that, you will simply have to create an entry in the appSettings section of your web.config, like the following:
 
